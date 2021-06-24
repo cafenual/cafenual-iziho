@@ -1,4 +1,46 @@
-#header {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+* #header {
   position: relative;
   width: 100%;
 
@@ -35,7 +77,7 @@
 }
 
 /* 왜 보더 안먹히지??????????  */
-.header-main div:hover {
+/* .header-main div:hover {
   border: 1px, solid, gray;
 }
 
@@ -48,4 +90,4 @@
 
 #header-loginbox span {
   font-size: medium;
-}
+} */
