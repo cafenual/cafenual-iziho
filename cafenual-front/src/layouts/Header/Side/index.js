@@ -6,7 +6,7 @@ import { Button } from 'react-bootstrap';
 const Sidemenu = () => {
   return (
     <div id="sidemenu">
-
+      
     </div>
   );
 };

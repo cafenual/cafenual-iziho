@@ -1,11 +1,13 @@
 import React from "react";
-
+import Sidemenu from "./../../layouts/Header/Side/index";
 import "./index.css";
+
 function Dash() {
   return (
-    <div className="login-box">
-
-    </div>
+    <>
+      <Sidemenu />
+      <div className="login-box"></div>
+    </>
   );
 }
 

@@ -18,7 +18,6 @@ function App() {
     <div id="container">
       <BrowserRouter>
         <Header />
-        <Nav />
         <Switch>
           <Route exact path="/" component={Dash} />
           <Route path="/login" component={Login} />
