@@ -1,18 +1,22 @@
 import express from "express";
 import mongoose from "mongoose";
-
+import "dotenv/config";
+import userRouter from "./routers/userRouter"
 const app = express();
-
+app.use(express.json());
+app.use(express.urlencoded({ extended : true}));
 mongoose
-  .connect(
-    "mongodb+srv://admin:admin@cafenal.vlqpx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-    { useNewUrlParser: true, useUnifiedTopology: true }
-  )
+  .connect(process.env.DB_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(console.log("DB가 실행되었다."))
   .catch((err) => console.log(err));
 
 const handleListening = () => {
-  console.log("서버가 실행되었습니다. : http://localhost:4000");
+  console.log(`서버가 실행되었습니다. : http://localhost:${process.env.PORT}`);
 };
 
-app.listen(4000, handleListening);
+app.use("/api/user",userRouter)
+
+app.listen(process.env.PORT, handleListening);

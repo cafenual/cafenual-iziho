@@ -1,8 +1,33 @@
-.login-box {
-  display: block;
-  height: 500px;
-  width: 500px;
-  margin: 0 auto;
-  margin-top: 100px;
+.dash-box {
+  display: flex;
+  border-radius: 20px;
+  justify-content: space-around;
 
+}
+
+.box-info {
+  margin: 0 25px;
+  width: 350px;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-right: 50px;
+  box-shadow: 0 13px 27px -30px rgba(50, 50, 93, 0.25),
+    0 8px 16px -13px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+.user-picture{
+  position: relative;
+  width: 140px;
+  height: 180px;
+  background-color: black;
+  margin: 0 auto;
+}
+.dash-lowbox{
+  display: flex;
+}
+.dash-notice{
+  width: 751px;
+  height: 192px;
+  box-shadow: 0 13px 27px -30px rgba(50, 50, 93, 0.25),
+  0 8px 16px -13px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
