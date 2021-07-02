@@ -1,4 +1,8 @@
+#dash-container{
+  padding-left: 250px;
+}
 .dash-box {
+  padding-top: 24px;
   display: flex;
   border-radius: 20px;
   justify-content: space-around;
@@ -14,6 +18,7 @@
   margin-right: 50px;
   box-shadow: 0 13px 27px -30px rgba(50, 50, 93, 0.25),
     0 8px 16px -13px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+
 }
 .user-picture{
   position: relative;
@@ -24,10 +29,24 @@
 }
 .dash-lowbox{
   display: flex;
+  padding-top:17px;
 }
 .dash-notice{
-  width: 751px;
+  padding-left: 5px;
+  width: 1080px;
   height: 192px;
   box-shadow: 0 13px 27px -30px rgba(50, 50, 93, 0.25),
   0 8px 16px -13px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+}
+
+.botton-box{
+  padding-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.ts{
+  width: 250px;
+  height: 60px;
 }
