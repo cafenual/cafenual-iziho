@@ -1,0 +1,113 @@
+#trans-container {
+  width: 1080px;
+  height: 80vh;
+  margin: 0 auto;
+}
+.title {
+  text-align: center;
+  margin: 15px;
+  font-size: 20px;
+}
+
+.trans-object {
+  display: flex;
+  border: 1px solid rgb(126, 126, 126);
+  height: 100%;
+}
+.list-header {
+  font-size: 20px;
+  height: 30px;
+  border-bottom: 1px solid gray;
+  text-align: center;
+}
+.list-container {
+  position: relative;
+  height: 100%;
+  flex-basis: 25%;
+  border-right: black 1px solid;
+}
+
+.lists {
+  height: 30px;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  background-color: rgb(203, 181, 216);
+}
+
+.button-container {
+  position: absolute;
+  bottom: 8px;
+  display: flex;
+}
+.buttons {
+  font-weight: 700;
+  min-width: 46px;
+  height: 36px;
+  margin-left: 10px;
+  padding: 0 12px;
+  font-size: 13px;
+  line-height: 36px;
+  color: #000000;
+  background-color: #eff0f2;
+  border-radius: 6px;
+}
+.trans-contents {
+  border: 4px double gray;
+  height: 100%;
+  flex-basis: 80%;
+  position: relative;
+}
+
+.contents-header {
+  height: 100px;
+  border-bottom: #ebecef solid 1px;
+}
+
+.contents-tit {
+  font-size: 26px;
+  margin: 8px;
+}
+.wirte {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}
+.mask {
+  display: inline-block;
+  height: 36px;
+  width: 36px;
+  background-color: #efe7f0;
+  margin-right: 3px;
+}
+.nick {
+  margin-right: 6px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.contents {
+  padding-bottom: 30px;
+  border-bottom: #ebecef solid 1px;
+}
+
+.reply-tit{
+    font-weight: 700;
+    font-size: 17px;
+}
+.reply {
+  height: 88px;
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  bottom: 20px;
+}
+.reply input {
+  border: none;
+  flex-basis: 80%;
+}
+.reply-box {
+  display: flex;
+  border: 2px solid #ebecef;
+  padding: 15px;
+}

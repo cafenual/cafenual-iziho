@@ -3,7 +3,8 @@ import { Card, CardGroup } from "react-bootstrap";
 import "./style.css";
 import coffee from "static/coffe.jpg";
 import RecipeCategory from "components/Recipe/RecipeCategory";
-import { withRouter } from "react-router-dom";
+import { Link,Router, withRouter } from "react-router-dom";
+import RecipeEditor from "components/Recipe/RecipeEditor/index";
 
 const RecipeDetail = ({ match }) => {
   const category = match.params.id;
@@ -52,8 +53,8 @@ const RecipeDetail = ({ match }) => {
     },
     {
       id: 3,
-      name: "orange",
-      category: "juice",
+      name: "milktea",
+      category: "tea",
     },
   ];
 
@@ -72,25 +73,24 @@ const RecipeDetail = ({ match }) => {
   return (
     <>
       <RecipeCategory />
+
       <div id="recipe-box">
         <CardGroup>
+        <div className="make-recipe">
+        <Link to="/recipe/editer" className="fix-button">레시피 만들기</Link>
+      </div>
           {fakeCategoryFilter.map((item, index) => (
             <Card key={index}>
               <Card.Img className="pic" variant="top" src={coffee} />
               <Card.Body>
                 <Card.Title>{item.name}</Card.Title>
-                <Card.Text>
-                    1.홈플러스에서 산다.
-                    <br />
-                    2.뚜껑을 딴다.
-                    <br />
-                    3.컵에 따른다.
-                    <br />
-                    4.판다.
-                </Card.Text>
+                <Card.Text></Card.Text>
               </Card.Body>
               <Card.Footer>
-                <small className="text-muted">Last updated 3 mins ago</small>
+                <div className="flex">
+                  <input type="button" className="fix-button" value="수정" />
+                  <input type="button" className="fix-button" value="삭제" />
+                </div>
               </Card.Footer>
             </Card>
           ))}

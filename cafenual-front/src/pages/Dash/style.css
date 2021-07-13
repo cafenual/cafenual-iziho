@@ -1,5 +1,10 @@
 #dash-container{
+  margin-top: 80px;
   padding-left: 250px;
+}
+
+li{
+  list-style:  none;
 }
 .dash-box {
   padding-top: 24px;
@@ -26,6 +31,10 @@
   height: 180px;
   background-color: black;
   margin: 0 auto;
+}
+.user-info{ 
+  padding: 20px;
+  font-size: 20px;
 }
 .dash-lowbox{
   display: flex;

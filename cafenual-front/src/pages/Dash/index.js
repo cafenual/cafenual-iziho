@@ -1,6 +1,6 @@
 import React from "react";
 import Sidemenu from "./../../layouts/Header/Side/index";
-import "./index.css";
+import "./style.css";
 import { Button } from "react-bootstrap";
 function Dash() {
   return (
@@ -10,9 +10,9 @@ function Dash() {
         <div className="dash-box">
           <div className="box-info">
             <div className="user-picture"></div>
-            <ul>
-              <li>이름 : </li>
-              <li>나이 : </li>
+            <ul className="user-info">
+              <li>이름 : 이지호</li>
+              <li>나이 : 24</li>
               <li>아이디 : </li>
             </ul>
           </div>
