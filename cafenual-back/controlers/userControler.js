@@ -3,7 +3,7 @@ import User from "../models/user";
 //회원가입
 export const register = async (req, res) => {
   const { email, password, name } = req.body;
-  
+
   try {
     // 이메일이 디비에 있는지 확인
     const exist = await User.findOne({
@@ -21,7 +21,9 @@ export const register = async (req, res) => {
       name,
     });
     console.log(user);
+    await user.setPassword(password);
     await user.save();
+
     res.status(200).json({
       success: true,
       user,
