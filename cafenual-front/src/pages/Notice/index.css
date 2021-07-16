@@ -1,3 +1,30 @@
-#notice-table{
-    display: block; 
+#notice {
+  width: 1080px;
+  margin: 0 auto;
 }
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+tbody td {
+  padding: 8px 18px 8px 12px;
+  border-bottom: 1px solid #f2f2f2;
+  font-size: 15px;
+}
+.post-sort {
+  text-align: center;
+}
+.necessary{
+    border: 1px #fc7c85 solid;
+    border-radius: 8px;
+    background-color: #ffc6c9;
+}
+.important{
+    border: 1px #fc7c85 solid;
+    border-radius: 8px;
+}
+.nomal {
+  border: 1px solid #ffc6c9;
+  border-radius: 8px;
+}
+

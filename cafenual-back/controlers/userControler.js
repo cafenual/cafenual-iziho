@@ -22,6 +22,7 @@ export const register = async (req, res) => {
     });
     console.log(user);
     await user.setPassword(password);
+    
     await user.save();
 
     res.status(200).json({

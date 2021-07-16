@@ -1,20 +1,19 @@
-.make-recipe{
-
+.recipe-box {
+  width: 1080px;
+  margin: 0 auto;
+}
+.fix-button {
+  border-radius: 10px;
+  width: 130px;
+  padding: 10px;
 }
 
-.fix-button{
-    
-    border-radius: 10px;
-    width: 130px;
-    padding: 10px;
+.flex {
+  justify-content: space-around;
+  display: flex;
 }
 
-.flex{
-    justify-content: space-around;
-    display: flex;
-}
-
-#recipe-box{
-    width: 1080px;
-    margin: 0 auto;
+#recipe-box {
+  width: 1080px;
+  margin: 0 auto;
 }

@@ -3,8 +3,8 @@
   height: 80vh;
   margin: 0 auto;
 }
+
 .title {
-  text-align: center;
   margin: 15px;
   font-size: 20px;
 }
@@ -91,9 +91,9 @@
   border-bottom: #ebecef solid 1px;
 }
 
-.reply-tit{
-    font-weight: 700;
-    font-size: 17px;
+.reply-tit {
+  font-weight: 700;
+  font-size: 17px;
 }
 .reply {
   height: 88px;
