@@ -1,5 +1,6 @@
 import mongoose, { Schema } from "mongoose";
 import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
 
 const saltRountds = 10;
 const UserSchema = new Schema(
@@ -46,10 +47,32 @@ const UserSchema = new Schema(
   },
   { timestamps: true }
 );
-
+// 비번을 db에 암호화 하여 저장
 UserSchema.methods.setPassword = async function (password) {
   const result = await bcrypt.hash(password, saltRountds);
   this.password = result;
+};
+
+// 입력받은 비번이 db에 있는 비번이랑 같은지 확인
+UserSchema.methods.checkPassword = async function (password) {
+  const result = await bcrypt.compare(password, this.password);
+  return result;
+};
+
+//토큰 생성
+UserSchema.methods.generateToken = async function () {
+  const token = jwt.sign(
+    {
+      _id: this._id,
+      email: this.email,
+      name: this.name,
+      role: this.role,
+    },
+    process.env.JWT_SECRET
+  );
+  this.token = token;
+  await this.save();
+  return token;
 };
 
 const User = mongoose.model("User", UserSchema);

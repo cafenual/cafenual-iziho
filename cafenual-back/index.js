@@ -2,6 +2,8 @@ import express from "express";
 import mongoose from "mongoose";
 import "dotenv/config";
 import userRouter from "./routers/userRouter"
+import cookieParser from "cookie-parser";
+
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended : true}));
@@ -9,6 +11,8 @@ mongoose
   .connect(process.env.DB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useCreateIndex: true,
+    
   })
   .then(console.log("DB가 실행되었다."))
   .catch((err) => console.log(err));

@@ -26,7 +26,7 @@ function Dash() {
               <li>이름 : 이지호</li>
               <li>나이 : 24</li>
               <li>아이디 : dlwlgh123</li>
-              <li>상태 : </li>
+              <li>상태 : {state}</li>
             </ul>
           </div>
           <div className="box-info">
