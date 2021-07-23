@@ -13,6 +13,7 @@ import Header from "layouts/Header/Top";
 import Nav from "./layouts/Header/Side";
 import RecipeDetail from "pages/Recipe/RecipeDetail/";
 import RecipeEditor from "components/Recipe/RecipeEditor";
+import User from "./pages/Dash/User";
 //test123asd
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route exact path="/" component={Dash} />
+          <Route exact path="/dash" component={Dash} />
+          <Route exact path="/dash/user" component={User} />
           <Route path="/login" component={Login} />
           <Route path="/join" component={Join} />
           <Route path="/notice" component={Notice} />
