@@ -1,9 +1,10 @@
 import React from "react";
-import { Form,Button } from 'react-bootstrap';
+import { Form, Button } from "react-bootstrap";
 import "./index.css";
 function Login() {
   return (
     <div className="login-box">
+      <div className="title">로그인</div>
       <Form>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email 주소</Form.Label>

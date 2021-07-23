@@ -73,7 +73,7 @@ const RecipeDetail = ({ match }) => {
   return (
     <>
       <div className="recipe-box">
-        <div className="title">공지사항</div>
+        <div className="title">메뉴레시피</div>
         <RecipeCategory />
 
         <div id="recipe-box">

@@ -4,6 +4,7 @@ import "./index.css";
 function Join() {
   return (
     <div className="join-box">
+            <div className="title">회원가입</div>
       <Form>
         <Form.Label>이름</Form.Label>
         <Form.Control type="text" placeholder="Name" />
