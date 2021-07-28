@@ -1,3 +1,43 @@
-.user-container{
-    padding-left: 280px;
+.user-container {
+  width: 1080px;
+  padding-left: 280px;
+  margin: 0 auto;
+}
+.ans-info input {
+  font-size: 14px;
+  line-height: 35px;
+  width: 500px;
+  height: 60px;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+}
+.non-ans-info {
+  font-size: 14px;
+  line-height: 35px;
+  width: 500px;
+  height: 60px;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  background-color: rgb(241, 241, 241);
+}
+.submit-box{
+    margin: 20px;
+    width: 500px;
+    text-align: center;
+}
+.save-user-info {
+  font-weight: 700;
+  width: 160px;
+  height: 54px;
+  margin: 0 auto;
+  padding: 0 12px;
+  font-size: 13px;
+  line-height: 36px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 1px;
+  &:hover {
+    color: #ffffff;
+    background-color: #727272;
+  }
 }
