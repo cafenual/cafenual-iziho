@@ -12,7 +12,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "layouts/Header/Top";
 import Nav from "./layouts/Header/Side";
 import RecipeDetail from "pages/Recipe/RecipeDetail/";
-import RecipeEditor from "components/Recipe/RecipeEditor";
+import RecipeEditor from "components/Recipe/RecipeEditor/index.js";
 import User from "./pages/Dash/User";
 //test123asd
 
@@ -30,7 +30,7 @@ function App() {
           <Route path="/message" component={Message} />
           <Route path="/transition" component={Transition} />
           <Route path="/manual" component={Manual} />
-          <Route path="/recipe/editor" component={RecipeEditor} />
+          <Route path="/editor" component={RecipeEditor} />
           <Route path="/recipe/:id?" component={RecipeDetail} />
         </Switch>
       </BrowserRouter>

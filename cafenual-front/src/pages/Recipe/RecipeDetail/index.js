@@ -74,17 +74,18 @@ const RecipeDetail = ({ match }) => {
     <>
       <div className="recipe-box">
         <div className="title">메뉴레시피</div>
+        <div className="make-recipe">
+              <Link to="/editor" className="fix-button">
+                레시피 만들기
+              </Link>
+            </div>
         <RecipeCategory />
 
         <div id="recipe-box">
           <CardGroup>
-            <div className="make-recipe">
-              <Link to="/recipe/editer" className="fix-button">
-                레시피 만들기
-              </Link>
-            </div>
+
             {fakeCategoryFilter.map((item, index) => (
-              <Card key={index}>
+              <Card key={index} className="recipe-card">
                 <Card.Img className="pic" variant="top" src={coffee} />
                 <Card.Body>
                   <Card.Title>{item.name}</Card.Title>
