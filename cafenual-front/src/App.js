@@ -10,11 +10,10 @@ import Message from "./pages/Message/message";
 import Transition from "./pages/Transition/index";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "layouts/Header/Top";
-import Nav from "./layouts/Header/Side";
 import RecipeDetail from "pages/Recipe/RecipeDetail/";
 import RecipeEditor from "components/Recipe/RecipeEditor/index.js";
 import User from "./pages/Dash/User";
-//test123asd
+import Management from "pages/Management/index";
 
 function App() {
   return (
@@ -28,6 +27,7 @@ function App() {
           <Route path="/join" component={Join} />
           <Route path="/notice" component={Notice} />
           <Route path="/message" component={Message} />
+          <Route path="/management" component={Management} />
           <Route path="/transition" component={Transition} />
           <Route path="/manual" component={Manual} />
           <Route path="/editor" component={RecipeEditor} />

@@ -38,8 +38,8 @@ const UserSchema = new Schema(
     },
     role: {
       type: String,
-      enum: ["admin", "parttime"],
-      default: "parttime",
+      enum: ["emploer", "employee"],
+      default: "employee",
     },
     token: {
       type: String,

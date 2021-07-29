@@ -15,7 +15,7 @@ const Header = () => {
             <Nav.Link href="/notice">공지사항</Nav.Link>
             <Nav.Link href="/transition">인수인계</Nav.Link>
             <Nav.Link href="/manual">업무메뉴얼</Nav.Link>
-            <Nav.Link href="/message">쪽지함</Nav.Link>
+            <Nav.Link href="/management">직원관리</Nav.Link>
             <Nav.Link href="/join">회원가입</Nav.Link>
             <Nav.Link href="/login">로그인</Nav.Link>
           </Nav>

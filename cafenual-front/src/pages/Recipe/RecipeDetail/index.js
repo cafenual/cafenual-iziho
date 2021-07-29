@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Card, CardGroup } from "react-bootstrap";
-import "./style.css";
+import "./style.scss";
 import coffee from "static/coffe.jpg";
 import RecipeCategory from "components/Recipe/RecipeCategory";
 import { Link, Router, withRouter } from "react-router-dom";
@@ -75,7 +75,7 @@ const RecipeDetail = ({ match }) => {
       <div className="recipe-box">
         <div className="title">메뉴레시피</div>
         <div className="make-recipe">
-              <Link to="/editor" className="fix-button">
+              <Link to="/editor">
                 레시피 만들기
               </Link>
             </div>

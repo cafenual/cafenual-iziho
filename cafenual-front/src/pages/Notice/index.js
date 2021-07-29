@@ -102,7 +102,7 @@ function Notice() {
           </tbody>
         </table>
         <div className="button-container">
-          <div className="buttons">글작성</div>
+          <div className="buttons"><Link to="">글작성</Link></div>
           <div className=""></div>
         </div>
       </div>

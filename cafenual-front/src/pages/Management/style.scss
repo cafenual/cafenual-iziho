@@ -1,0 +1,37 @@
+.management-container {
+  width: 1080px;
+  margin: 0 auto;
+}
+.emploer-list {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border: 1px solid #c4c5c7;
+  max-height: 800px;
+}
+
+.emploer-info {
+  display: flex;
+  height: 60px;
+  border: 1px solid #ebecef;
+  font-size: 19px;
+  line-height: 60px;
+}
+.emploer-info-element {
+  padding-left: 20px;
+}
+.modify {
+  font-weight: 700;
+  width: 160px;
+  height: 54px;
+  margin: 0 auto;
+  padding: 0 12px;
+  font-size: 13px;
+  line-height: 36px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 1px;
+  &:hover {
+    color: #ffffff;
+    background-color: #727272;
+  }
+}
