@@ -104,20 +104,22 @@ function Management() {
   return (
     <>
       <div className="management-container">
-        <div className="title">직원관리</div>
-        <button className="modify">수정완료</button>
+        <div className="title">
+          직원관리 <button className="modify">수정완료</button>
+        </div>
+
         <div className="emploer-list">
           {fakedata.map((item, index) => (
             <div key={index} className="emploer-info">
               <div className="emploer-info-element">
                 <IoMdPerson /> 이름 : {item.name}
               </div>
+              <div className="emploer-info-element">
+                직급 : <input type="text" value={item.role} />
+              </div>
               <div className="emploer-info-element">이메일 : {item.email}</div>
               <div className="emploer-info-element">
                 시급 : <input type="text" value={item.wage} />
-              </div>
-              <div className="emploer-info-element">
-                직급 : <input type="text" value={item.role} />
               </div>
             </div>
           ))}
