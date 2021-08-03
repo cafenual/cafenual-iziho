@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import "dotenv/config";
 import userRouter from "./routers/userRouter"
+import noticeRouter from "./routers/noticeRouter"
 import cookieParser from "cookie-parser";
 
 const app = express();
@@ -22,5 +23,6 @@ const handleListening = () => {
 };
 
 app.use("/api/user",userRouter)
+app.use("/api/notice",noticeRouter)
 
 app.listen(process.env.PORT, handleListening);
