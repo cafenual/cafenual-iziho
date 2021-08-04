@@ -1,0 +1,64 @@
+.manual-container {
+  width: 1080px;
+  margin: 0 auto;
+}
+.manual-btn {
+  font-weight: 700;
+  height: 36px;
+  padding: 0 12px;
+  font-size: 13px;
+  line-height: 36px;
+  color: #000000;
+  background-color: #eff0f2;
+  border-radius: 6px;
+  text-align: center;
+  display: inline-block;
+  position: left;
+}
+.add-manual {
+  display: flex;
+  .info-box {
+    margin: 10px;
+    .manual-btn {
+      margin-left: 20px;
+    }
+    .ans-info {
+      input {
+        width: 250px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+.manual-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.todo-list {
+  margin: 20px;
+  width: 320px;
+  height: auto;
+  background-color: rgb(243, 247, 233);
+  .todo-part {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(188, 240, 57);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+  }
+  .todo-task {
+    ul {
+      padding-left: 10px;
+    }
+    li {
+      display: flex;
+      font-size: 15px;
+      .del-todo {
+        cursor: pointer;
+        margin: 0 5px;
+      }
+    }
+  }
+}
