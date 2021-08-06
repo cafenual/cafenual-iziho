@@ -56,7 +56,7 @@ li {
 .button{
   text-align: center;
   margin: 20px;
-  background:rgb(203, 181, 216);
+  background:rgb(181, 190, 216);
   color:#fff;
   border:none;
   position:relative;
@@ -70,7 +70,7 @@ li {
 }
 .button:hover{
   background:#fff;
-  color:rgb(203, 181, 216);;
+  color:rgb(181, 192, 216);
 }
 .button:before,button:after{
   content:'';
@@ -79,7 +79,7 @@ li {
   right:0;
   height:2px;
   width:0;
-  background: rgb(203, 181, 216);
+  background: rgb(181, 192, 216);
   transition:400ms ease all;
 }
 .button:after{

@@ -1,7 +1,6 @@
 .management-container {
   width: 1080px;
   margin: 0 auto;
-
 }
 .emploer-list {
   overflow-y: scroll;
@@ -10,19 +9,30 @@
   max-height: 700px;
   border-radius: 8px;
 }
-
 .emploer-info {
   display: flex;
   height: 60px;
-  border: 1px solid #ebecef;
-  font-size: 19px;
-  line-height: 60px;
+  align-items: center;
+  justify-content: center;
+  .inner-emploer-info {
+    background-color: #e0e3fa;
+    display: flex;
+    border-radius: 5px;
+    width: 94%;
+    height: 40px;
+    border: 1px solid #95a2d4;
+    font-size: 19px;
+    line-height: 30px;
+    align-items: center;
+  }
 }
+
 .emploer-info-element {
   padding-left: 20px;
-  input{
+  input {
     height: 27px;
     border-radius: 5px;
+    border: 1px solid #95a2d4;
   }
 }
 .modify {
@@ -39,6 +49,5 @@
   &:hover {
     color: #ffffff;
     background-color: #727272;
-
   }
 }

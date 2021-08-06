@@ -6,7 +6,7 @@ import "./index.css";
 const Header = () => {
   return (
     <div>
-      <Navbar bg="dark" variant="dark">
+      <Navbar className="TopNavber">
         <Container>
           <Navbar.Brand href="/">Cafenual</Navbar.Brand>
           <Nav className="me-auto">

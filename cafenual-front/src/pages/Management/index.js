@@ -2,6 +2,7 @@ import React from "react";
 import "./style.scss";
 import { IoMdPerson } from "react-icons/io";
 function Management() {
+  
   const fakedata = [
     {
       email: "test1@naver.com",
@@ -111,15 +112,19 @@ function Management() {
         <div className="emploer-list">
           {fakedata.map((item, index) => (
             <div key={index} className="emploer-info">
-              <div className="emploer-info-element">
-                <IoMdPerson /> 이름 : {item.name}
-              </div>
-              <div className="emploer-info-element">
-                직급 : <input type="text" value={item.role} />
-              </div>
-              <div className="emploer-info-element">이메일 : {item.email}</div>
-              <div className="emploer-info-element">
-                시급 : <input type="text" value={item.wage} />
+              <div className="inner-emploer-info">
+                <div className="emploer-info-element">
+                  <IoMdPerson /> 이름 : {item.name}
+                </div>
+                <div className="emploer-info-element">
+                  직급 : <input type="text" value={item.role} />
+                </div>
+                <div className="emploer-info-element">
+                  이메일 : {item.email}
+                </div>
+                <div className="emploer-info-element">
+                  시급 : <input type="text" value={item.wage} />
+                </div>
               </div>
             </div>
           ))}

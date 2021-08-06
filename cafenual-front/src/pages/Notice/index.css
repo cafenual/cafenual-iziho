@@ -15,16 +15,16 @@ tbody td {
   text-align: center;
 }
 .necessary{
-    border: 1px #fc7c85 solid;
+    border: 1px rgb(121, 141, 196) solid;
     border-radius: 8px;
-    background-color: #ffc6c9;
+    background-color: rgba(76, 107, 194, 0.555);
 }
 .important{
-    border: 1px #fc7c85 solid;
+    border: 1px rgb(121, 141, 196) solid;
     border-radius: 8px;
 }
 .nomal {
-  border: 1px solid #ffc6c9;
+  border: 1px solid rgba(144, 157, 194, 0.555);
   border-radius: 8px;
 }
 
