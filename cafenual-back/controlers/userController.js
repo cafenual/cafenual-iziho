@@ -2,7 +2,7 @@ import User from "../models/user";
 import cookieParser from "cookie-parser";
 //회원가입
 export const register = async (req, res) => {
-  const { email, password, name } = req.body;
+  const { email, password, name, phoneNumber } = req.body;
 
   try {
     // 이메일이 디비에 있는지 확인
@@ -19,6 +19,7 @@ export const register = async (req, res) => {
       email,
       password,
       name,
+      phoneNumber,
     });
     console.log(user);
     await user.setPassword(password);
@@ -80,12 +81,11 @@ export const login = async (req, res) => {
   }
 };
 
-
 //로그아웃
 
-export const logout = async(req,res)=>{
-  res.cookie("user","").status(200).json({
-  success:true,
-  message:"로그아웃 성공!",
- })
-}
+export const logout = async (req, res) => {
+  res.cookie("user", "").status(200).json({
+    success: true,
+    message: "로그아웃 성공!",
+  });
+};

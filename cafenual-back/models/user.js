@@ -41,6 +41,11 @@ const UserSchema = new Schema(
       enum: ["employer", "employee"],
       default: "employee",
     },
+    phoneNumber: {
+      type: String,
+      required: true,
+      trim: true,
+    },
     token: {
       type: String,
     },
