@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.scss";
 import { IoMdPerson } from "react-icons/io";
+import Sidemenu from "./../../layouts/Header/Side/index";
 function Management() {
-  
   const fakedata = [
     {
       email: "test1@naver.com",
@@ -104,31 +104,34 @@ function Management() {
 
   return (
     <>
+      <Sidemenu />
       <div className="management-container">
         <div className="title">
-          직원관리 <button className="modify">수정완료</button>
+          직원관리
         </div>
 
-        <div className="emploer-list">
+        <div className="employer-list">
           {fakedata.map((item, index) => (
-            <div key={index} className="emploer-info">
-              <div className="inner-emploer-info">
-                <div className="emploer-info-element">
+            <div key={index} className="employer-info">
+              <div className="inner-employer-info">
+                <div className="employer-info-element">
                   <IoMdPerson /> 이름 : {item.name}
                 </div>
-                <div className="emploer-info-element">
+                <div className="employer-info-element">
                   직급 : <input type="text" value={item.role} />
                 </div>
-                <div className="emploer-info-element">
+                <div className="employer-info-element">
                   이메일 : {item.email}
                 </div>
-                <div className="emploer-info-element">
+                <div className="employer-info-element">
                   시급 : <input type="text" value={item.wage} />
                 </div>
               </div>
             </div>
           ))}
+          
         </div>
+        <button className="modify">수정완료</button>
       </div>
     </>
   );

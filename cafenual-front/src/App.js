@@ -6,7 +6,6 @@ import Login from "./pages/Login/login.js";
 import Recipe from "./components/Recipe/RecipeCategory/index";
 import Notice from "./pages/Notice/index";
 import Manual from "./pages/Manual/index";
-import Message from "./pages/Message/message";
 import Transition from "./pages/Transition/index";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "layouts/Header/Top";
@@ -21,12 +20,12 @@ function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route exact path="/dash" component={Dash} />
-          <Route exact path="/dash/user" component={User} />
+          <Route exact path="/" component={Dash} />
+          <Route path="/user" component={User} />
           <Route path="/login" component={Login} />
           <Route path="/join" component={Join} />
           <Route path="/notice" component={Notice} />
-          <Route path="/message" component={Message} />
+          {/* <Route path="/message" component={Message} /> */}
           <Route path="/management" component={Management} />
           <Route path="/transition" component={Transition} />
           <Route path="/manual" component={Manual} />

@@ -1,20 +1,20 @@
 .management-container {
   width: 1080px;
-  margin: 0 auto;
+margin-left: 300px;
 }
-.emploer-list {
+.employer-list {
   overflow-y: scroll;
   overflow-x: hidden;
   border: 1px solid #c4c5c7;
-  max-height: 700px;
+  max-height: 650px;
   border-radius: 8px;
 }
-.emploer-info {
+.employer-info {
   display: flex;
   height: 60px;
   align-items: center;
   justify-content: center;
-  .inner-emploer-info {
+  .inner-employer-info {
     background-color: #e0e3fa;
     display: flex;
     border-radius: 5px;
@@ -27,7 +27,7 @@
   }
 }
 
-.emploer-info-element {
+.employer-info-element {
   padding-left: 20px;
   input {
     height: 27px;
@@ -40,6 +40,7 @@
   width: 160px;
   height: 54px;
   margin-left: 900px;
+  margin-top: 5px;
   padding: 0 12px;
   font-size: 13px;
   line-height: 36px;

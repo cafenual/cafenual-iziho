@@ -34,8 +34,8 @@ const UserInfo = () => {
     <>
       <Sidemenu />
       <div className="user-container">
+        <div className="title">사용자 정보</div>
         <form>
-          <div className="title">사용자 정보</div>
           <div className="info-box">
             <div className="info-elements"> 이메일</div>
             <div className="ans-info">

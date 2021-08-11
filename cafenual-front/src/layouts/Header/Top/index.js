@@ -10,12 +10,11 @@ const Header = () => {
         <Container>
           <Navbar.Brand href="/">Cafenual</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="/dash">대시보드</Nav.Link>
+            <Nav.Link href="/">대시보드</Nav.Link>
             <Nav.Link href="/recipe">메뉴레시피</Nav.Link>
             <Nav.Link href="/notice">공지사항</Nav.Link>
             <Nav.Link href="/transition">인수인계</Nav.Link>
             <Nav.Link href="/manual">업무메뉴얼</Nav.Link>
-            <Nav.Link href="/management">직원관리</Nav.Link>
             <Nav.Link href="/join">회원가입</Nav.Link>
             <Nav.Link href="/login">로그인</Nav.Link>
           </Nav>
