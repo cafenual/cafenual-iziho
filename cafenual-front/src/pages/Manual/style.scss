@@ -14,18 +14,26 @@
   text-align: center;
   display: inline-block;
   position: left;
+  cursor: pointer;
 }
 .add-manual {
   display: flex;
   .info-box {
     margin: 10px;
+    .info-elements {
+      font-size: 14px;
+      font-weight: bold;
+    }
     .manual-btn {
-      margin-left: 20px;
+      margin-left: 2px;
     }
     .ans-info {
       input {
         width: 250px;
         height: 30px;
+        &:focus {
+          outline: 2px solid #e2f5e2;
+        }
       }
     }
   }
@@ -58,6 +66,28 @@
       .del-todo {
         cursor: pointer;
         margin: 0 5px;
+      }
+    }
+  }
+  .info-elements {
+    cursor: pointer;
+    margin: 10 10 10 10px;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:hover {
+      color: rgb(117, 117, 117);
+    }
+  }
+  .info-box {
+    .ans-info {
+      input {
+        width: 240px;
+        height: 30px;
+        margin-right: 2px;
+        &:focus {
+          outline: 2px solid #e2f5e2;
+        }
       }
     }
   }

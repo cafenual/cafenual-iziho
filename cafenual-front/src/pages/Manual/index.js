@@ -3,7 +3,8 @@ import "./style.scss";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 function Manual() {
-  const [open, setopen] = useState(false);
+  const [openPart, setopenPart] = useState(false);
+  const [openWork, setopenWork] = useState(false);
   return (
     <div className="manual-container">
       <div className="title">업무 메뉴얼</div>
@@ -11,26 +12,19 @@ function Manual() {
         <div
           className="manual-btn"
           onClick={() => {
-            setopen(!open);
+            setopenPart(!openPart);
           }}
         >
-          업무 추가하기
+          파트 추가하기
         </div>
 
-        {open === true ? (
+        {openPart === true ? (
           <div className="add-manual">
             <div className="info-box">
               <div className="info-elements">파트</div>
               <div className="ans-info">
                 <input type="text" />
-              </div>
-            </div>
-            <div className="info-box">
-              <div className="info-elements">업무 내용</div>
-              <div className="ans-info">
-                <input type="text" />
                 <div className="manual-btn">추가하기</div>
-                {/* 여기 질문 */}
               </div>
             </div>
           </div>
@@ -125,6 +119,24 @@ function Manual() {
               </li>
             </ul>
           </div>
+          <div
+            className="info-elements"
+            onClick={() => {
+              setopenWork(!openWork);
+            }}
+          >
+            업무 추가하기
+          </div>
+          {openWork === true ? (
+            <div className="info-box">
+              <div className="ans-info">
+                <input type="text" />
+                <div className="manual-btn">추가하기</div>
+              </div>
+            </div>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
     </div>
