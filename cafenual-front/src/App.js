@@ -13,6 +13,7 @@ import RecipeDetail from "pages/Recipe/RecipeDetail/";
 import RecipeEditor from "components/Recipe/RecipeEditor/index.js";
 import User from "./pages/Dash/User";
 import Management from "pages/Management/index";
+import Schedule from "pages/Schedule/index";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/login" component={Login} />
           <Route path="/join" component={Join} />
           <Route path="/notice" component={Notice} />
+          <Route path="/schedule" component={Schedule} />
           {/* <Route path="/message" component={Message} /> */}
           <Route path="/management" component={Management} />
           <Route path="/transition" component={Transition} />
