@@ -1,6 +1,6 @@
 import Notice from "../models/notice";
-//공지생성
 
+//공지생성
 export const createNoitce = async (req, res) => {
   try {
     const notice = new Notice(req.body);

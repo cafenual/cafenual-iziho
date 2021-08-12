@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import "dotenv/config";
 import userRouter from "./routers/userRouter";
 import noticeRouter from "./routers/noticeRouter";
+import transitionRouter from "./routers/transitionRouter";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 
@@ -27,5 +28,6 @@ const handleListening = () => {
 
 app.use("/api/user", userRouter);
 app.use("/api/notice", noticeRouter);
+app.use("/api/transition", transitionRouter);
 
 app.listen(process.env.PORT, handleListening);

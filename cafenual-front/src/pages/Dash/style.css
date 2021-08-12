@@ -1,5 +1,5 @@
 #dash-container {
-  margin-top: 80px;
+  margin-top: 20px;
   padding-left: 250px;
 }
 
@@ -24,7 +24,7 @@ li {
   border: solid 1px rgb(173, 173, 173);
   margin: 0 25px;
   width: 350px;
-  height: 600px;
+  height: 500px;
   background-color: #fff;
   border-radius: 10px;
 }
