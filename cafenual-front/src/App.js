@@ -13,7 +13,7 @@ import RecipeDetail from "pages/Recipe/RecipeDetail/";
 import RecipeEditor from "components/Recipe/RecipeEditor/index.js";
 import User from "./pages/Dash/User";
 import Management from "pages/Management/index";
-import Schedule from "pages/Schedule/index";
+import Schedule from "pages/Scheduler/index";
 
 function App() {
   return (
