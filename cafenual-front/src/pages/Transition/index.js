@@ -1,7 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
+import client from "api/client";
 function Transition() {
-  const [today, settoday] = useState();
+  const [trans, setTrans] = useState([]);
+
+  useEffect(() => {
+    console.log("asd1");
+    const getData = async () => {
+      console.log("asd");
+      // const response = await axios.get(
+      //   "http://localhost:5000/api/transition/readTransition"
+      // );
+      const response = await client.get(`/transition/readTransition`);
+      console.log(response);
+    };
+    getData();
+  }, []);
+
   return (
     <div id="trans-container">
       <div className="title">인수인계</div>
@@ -9,6 +24,7 @@ function Transition() {
         <div className="list-container">
           <div className="list-header">요일별</div>
           <div className="list-box">
+            {}
             <div className="lists">2021.07.13</div>
             <div className="lists">2021.07.12</div>
             <div className="lists">2021.07.11</div>
@@ -54,7 +70,7 @@ function Transition() {
           <div className="reply">
             <div className="reply-tit">댓글</div>
             <div className="reply-box">
-            <div className="nick">이지호</div>
+              <div className="nick">이지호</div>
               <input type="text" placeholder="댓글을 남겨보세요" />
               <div className="buttons">등록</div>
             </div>

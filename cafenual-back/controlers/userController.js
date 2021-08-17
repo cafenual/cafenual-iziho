@@ -68,7 +68,6 @@ export const login = async (req, res) => {
     }
 
     const token = await user.generateToken();
-    console.log("as1");
     return res.cookie("user", token).status(200).json({
       success: true,
       message: "로그인 성공!",

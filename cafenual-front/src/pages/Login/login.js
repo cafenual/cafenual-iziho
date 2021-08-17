@@ -4,9 +4,12 @@ import { Form, Button } from "react-bootstrap";
 import "./index.css";
 import axios from "axios";
 import { useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { SetUser } from "modules/users";
+
 function Login() {
   const history = useHistory();
-
+  const dispatch = useDispatch();
   const [form, setform] = useState({
     email: "",
     password: "",
@@ -23,7 +26,6 @@ function Login() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    console.log(form);
     const body = {
       email,
       password,
@@ -34,7 +36,18 @@ function Login() {
         "http://localhost:5000/api/user/login",
         body
       );
-      history.push("/dash");
+      console.log(response);
+      const userBody = {
+        email : response.data.user.email,
+        name : response.data.user.name,
+        role : response.data.user.role,
+        wage : response.data.user.wage,
+        status : response.data.user.status,
+        phoneNumber : response.data.user.phoneNumber,
+      }
+      dispatch(SetUser(userBody));
+      sessionStorage.setItem("user",JSON.stringify(userBody));
+      history.push("/");
     } catch (e) {
       alert(e.response.data.message);
     }
