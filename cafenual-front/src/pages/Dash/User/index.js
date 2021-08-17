@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Sidemenu from "./../../../layouts/Header/Side/index";
 import "./style.scss";
 const UserInfo = () => {
-  const [inputs, setinputs] = useState({
+  const [form, setform] = useState({
     email: "dlwlgh123@naver.com",
     name: "이지호",
   });
@@ -10,25 +10,14 @@ const UserInfo = () => {
     email: "dlwlgh123@naver.com",
     name: "이지호",
   });
-  const handleOnChange = (e) => {
-    setinputs({
-      ...inputs,
+  const onChange = (e) => {
+    setform({
+      ...form,
       [e.target.name]: e.target.value,
     });
-    console.log(inputs.email + inputs.name);
+    console.log(form.email + form.name);
   };
 
-  const handleOnClick = () => {
-    setUser({
-      email: inputs.email,
-      name: inputs.name,
-    });
-    setOpenemail(false);
-    setOpenname(false);
-  };
-
-  const [Openemail, setOpenemail] = useState(false);
-  const [Openname, setOpenname] = useState(false);
 
   return (
     <>
@@ -39,7 +28,7 @@ const UserInfo = () => {
           <div className="info-box">
             <div className="info-elements"> 이메일</div>
             <div className="ans-info">
-              <input type="text" value={user.email} />
+              <input type="text" value={user.email} name="email" onChange={onChange}/>
             </div>
           </div>
           <div className="info-box">
@@ -75,38 +64,4 @@ const UserInfo = () => {
 
 export default UserInfo;
 
-{
-  /* <div>
-            <button className="buttons" onClick={() => setOpenemail(!Openemail)}>
-              이메일 수정하기
-            </button>
-          </div>
-          {Openemail === true ? (
-            <div>
-              <input
-                type="text"
-                name="email"
-                placeholder="이메일"
-                onChange={handleOnChange}
-              />
-            </div>
-          ) : (
-            <></>
-          )} */
-}
 
-{
-  /* <div>
-            <button className="buttons" onClick={() => setOpenname(!Openname)}>
-              이름 수정하기
-            </button>
-            {Openname === true ? (
-              <div>
-                <input type="text" name="name" placeholder="이름" onChange={handleOnChange} />
-                <button className="buttons" onClick={handleOnClick}>변경완료</button>
-              </div>
-            ) : (
-              <></>
-            )}
-          </div> */
-}

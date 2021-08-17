@@ -91,7 +91,8 @@ export const deleteNotice = async (req, res) => {
 
 //공지사항 수정
 export const updateNoitce = async (req, res) => {
-  const { noticeId, title, content, important } = req.body;
+  const { noticeId } = req.params;
+  const { title, content, important } = req.body;
 
   try {
     const notice = await Notice.findByIdAndUpdate(

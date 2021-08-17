@@ -6,6 +6,6 @@ router.post("/create", noticeCtrl.createNoitce);
 router.get("/readNotice", noticeCtrl.readNoitce);
 router.get("/read/:noticeId", noticeCtrl.readNoitceDetail);
 router.delete("/delete/:noticeId", noticeCtrl.deleteNotice);
-router.patch("/update", noticeCtrl.updateNoitce);
+router.patch("/update/:noticeId", noticeCtrl.updateNoitce);
 
 export default router;

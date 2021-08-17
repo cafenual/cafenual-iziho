@@ -19,7 +19,7 @@ function Scheduler() {
               initialView="dayGridMonth"
               events={[
                 { title: "오픈 파티", date: "2021-08-21" },
-                { title: "가게 오픈", date: "2021-08-22" },
+                { title: "오픈 파티", date: "2021-08-21" },
               ]}
             />
           </div>
