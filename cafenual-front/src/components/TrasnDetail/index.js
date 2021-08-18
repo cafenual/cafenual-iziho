@@ -17,11 +17,11 @@ const TransDetail = () => {
       const response = await client.get(
         `/transition/readTransitionDetail/${route}`
       );
+      console.log(response)
       dispatch(SetTransition(response.data.transition));
     };
     getData();
-  }, [route, dispatch]);
-  console.log(transition);
+  }, [route]);
   return (
     <div>
       <div className="trans-contents">
@@ -29,7 +29,7 @@ const TransDetail = () => {
           <div className="contents-tit">{transition.title}</div>
           <div className="wirte">
             <div className="mask"></div>
-            <div className="nick">이지호</div>
+            <div className="nick">{transition.writer.name}</div>
           </div>
         </div>
         <div className="contents">{transition.content}</div>

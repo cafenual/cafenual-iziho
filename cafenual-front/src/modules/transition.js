@@ -3,12 +3,14 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   title: "",
   content: "",
-  writer:[{
-    _id: "",
-    name: "",
-    role:"",
-    status:"",
-  }]
+  writer: [
+    {
+      _id: "",
+      name: "",
+      role: "",
+      status: "",
+    },
+  ],
 };
 
 const transition = createSlice({
