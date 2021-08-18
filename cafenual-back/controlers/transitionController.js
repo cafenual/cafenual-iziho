@@ -4,6 +4,7 @@ import Transition from "../models/transition";
 export const createTransition = async (req, res) => {
   try {
     const transition = new Transition(req.body);
+    transition = await transition.popilate("writer").execPopulate();
     await transition.save();
     return res.status(201).json({
       success: true,

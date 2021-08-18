@@ -10,6 +10,10 @@ const TransitionSchema = new Schema(
       type: String,
       required: true,
     },
+    writer: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref:"User"
+    },
   },
   { timestamps: true }
 );

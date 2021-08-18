@@ -29,7 +29,7 @@ function App() {
           <Route path="/schedule" component={Schedule} />
           {/* <Route path="/message" component={Message} /> */}
           <Route path="/management" component={Management} />
-          <Route path="/transition" component={Transition} />
+          <Route path="/transition/:transId?" component={Transition} />
           <Route path="/manual" component={Manual} />
           <Route path="/editor" component={RecipeEditor} />
           <Route path="/recipe/:id?" component={RecipeDetail} />
