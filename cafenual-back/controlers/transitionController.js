@@ -103,8 +103,10 @@ export const deleteTransition = async (req, res) => {
         message: "해당 공지사항이 존재하지 않습니다.",
       });
     }
+    const transitions = await Transition.find()
     return res.status(200).json({
       success: true,
+      transitions,
     });
   } catch (e) {
     return res.status(500).json({

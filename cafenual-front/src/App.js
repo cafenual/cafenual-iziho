@@ -14,6 +14,7 @@ import RecipeEditor from "components/Recipe/RecipeEditor/index.js";
 import User from "./pages/Dash/User";
 import Management from "pages/Management/index";
 import Schedule from "pages/Scheduler/index";
+import TransitionCreate from "pages/Transition/TransitionCreate/index";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           {/* <Route path="/message" component={Message} /> */}
           <Route path="/management" component={Management} />
           <Route path="/transition/:transId?" component={Transition} />
+          <Route path="/transitionCreate" component={TransitionCreate} />
           <Route path="/manual" component={Manual} />
           <Route path="/editor" component={RecipeEditor} />
           <Route path="/recipe/:id?" component={RecipeDetail} />

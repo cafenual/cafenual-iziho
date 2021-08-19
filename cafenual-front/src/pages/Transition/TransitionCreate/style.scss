@@ -1,0 +1,14 @@
+#transition-editor-container{
+    width: 1080px;
+    height: 740px;
+    margin: 0 auto;
+}
+.ck-rounded-corners .ck.ck-editor__editable:not(.ck-editor__nested-editable), .ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-rounded-corners {
+    border: 1px solid black;
+    height: 61vh;
+    overflow-y: scroll;
+}
+.edite-tit{
+    width: 100%;
+    height: 45px;
+}

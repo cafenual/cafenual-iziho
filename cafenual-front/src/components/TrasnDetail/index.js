@@ -29,10 +29,11 @@ const TransDetail = () => {
           <div className="contents-tit">{transition.title}</div>
           <div className="wirte">
             <div className="mask"></div>
-            <div className="nick">{transition.writer.name}</div>
+            <div className="nick"></div>
+            {/* //{transition.writer.name} */}
           </div>
         </div>
-        <div className="contents">{transition.content}</div>
+        <div className="contents" dangerouslySetInnerHTML={{ __html: transition.content }}></div>
         <div className="wirte">
           <div className="mask"></div>
           <div className="nick">탄탄이</div>
