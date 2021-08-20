@@ -15,6 +15,7 @@ import User from "./pages/Dash/User";
 import Management from "pages/Management/index";
 import Schedule from "pages/Scheduler/index";
 import TransitionCreate from "pages/Transition/TransitionCreate/index";
+import TransitionUpdate from './pages/Transition/TransitionUpdate/index';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/management" component={Management} />
           <Route path="/transition/:transId?" component={Transition} />
           <Route path="/transitionCreate" component={TransitionCreate} />
+          <Route path="/transitionUpdate/:transId?" component={TransitionUpdate} />
           <Route path="/manual" component={Manual} />
           <Route path="/editor" component={RecipeEditor} />
           <Route path="/recipe/:id?" component={RecipeDetail} />

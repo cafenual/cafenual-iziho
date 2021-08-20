@@ -23,19 +23,10 @@ function Transition() {
     getData();
   }, [route]);
 
-  //인수인계 생성
-  // const [createName, onChangeCreateName, setCreateName] = useInput('');
-  // const onClickCreate = async () => {
-  //   try {
-  //     const newTrans = await client.post(`/transition/createTransition`)
-  //     setBoards(boards);
-  //     setCreateName('');
-  //   } catch (e) {
-  //     alert('게시판 생성에 실패했습니다.');
-  //     console.log(e);
-  //     setCreateName('');
-  //   }
-  // };
+  //인수인계 수정
+  const onClickUpdate = async () =>{
+
+  }
 
   //인수인계 삭제
   const onClickDelete = async () => {
@@ -75,7 +66,7 @@ function Transition() {
             <div className="buttons" onClick={onClickDelete}>
               삭제
             </div>
-            <div className="buttons">수정</div>
+            <div className="buttons"><Link to={`/transitionUpdate/${route}`}>수정</Link></div>
           </div>
         </div>
         <TransDetail />

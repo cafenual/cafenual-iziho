@@ -38,6 +38,7 @@ function Login() {
       );
       console.log(response);
       const userBody = {
+        _id : response.data.user._id,
         email : response.data.user.email,
         name : response.data.user.name,
         role : response.data.user.role,

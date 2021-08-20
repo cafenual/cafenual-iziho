@@ -29,8 +29,7 @@ const TransDetail = () => {
           <div className="contents-tit">{transition.title}</div>
           <div className="wirte">
             <div className="mask"></div>
-            <div className="nick"></div>
-            {/* //{transition.writer.name} */}
+            <div className="nick">{transition.writer.name}</div>
           </div>
         </div>
         <div className="contents" dangerouslySetInnerHTML={{ __html: transition.content }}></div>
